@@ -1,0 +1,15 @@
+C:\Users\teslim.jimoh\csharpProject\bin\Debug\net6.0\csharpProject.exe
+C:\Users\teslim.jimoh\csharpProject\bin\Debug\net6.0\csharpProject.deps.json
+C:\Users\teslim.jimoh\csharpProject\bin\Debug\net6.0\csharpProject.runtimeconfig.json
+C:\Users\teslim.jimoh\csharpProject\bin\Debug\net6.0\csharpProject.dll
+C:\Users\teslim.jimoh\csharpProject\bin\Debug\net6.0\csharpProject.pdb
+C:\Users\teslim.jimoh\csharpProject\obj\Debug\net6.0\csharpProject.csproj.AssemblyReference.cache
+C:\Users\teslim.jimoh\csharpProject\obj\Debug\net6.0\csharpProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\teslim.jimoh\csharpProject\obj\Debug\net6.0\csharpProject.AssemblyInfoInputs.cache
+C:\Users\teslim.jimoh\csharpProject\obj\Debug\net6.0\csharpProject.AssemblyInfo.cs
+C:\Users\teslim.jimoh\csharpProject\obj\Debug\net6.0\csharpProject.csproj.CoreCompileInputs.cache
+C:\Users\teslim.jimoh\csharpProject\obj\Debug\net6.0\csharpProject.dll
+C:\Users\teslim.jimoh\csharpProject\obj\Debug\net6.0\refint\csharpProject.dll
+C:\Users\teslim.jimoh\csharpProject\obj\Debug\net6.0\csharpProject.pdb
+C:\Users\teslim.jimoh\csharpProject\obj\Debug\net6.0\csharpProject.genruntimeconfig.cache
+C:\Users\teslim.jimoh\csharpProject\obj\Debug\net6.0\ref\csharpProject.dll
