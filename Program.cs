@@ -858,36 +858,33 @@ class Program
         //     x--;
         // }
 
-        // guessing game
-        // int guess_number = 10;
-        // int guess_start = 0;
-        // int guess_end = 3;
+        //guessing game
+        int guess_number = 10;
+        int guess_start = 0;
+        int guess_end = 3;
 
-        // while (guess_start < guess_end)
-        // {
-        //     System.Console.Write("enter a number: ");
-        //     int guess =(int) Convert.ToInt32(Console.ReadLine());
+        while (guess_start < guess_end)
+        {
+            System.Console.Write("enter a number: ");
+             int guess =(int) Convert.ToInt32(Console.ReadLine());
             
-        //     if (guess == guess_number)
-        //     {
-        //         System.Console.WriteLine("correct!!");
-        //         break;
-        //     }
-        //     else if(guess != guess_number)
-        //     {
-        //         System.Console.WriteLine("wrong, guess again");
-        //     }
-        //     guess_start++;
-
-        //     if (guess_start >= guess_end)
-        //     {
-                
-        //         System.Console.WriteLine("u lose");
-        //         break;
-        //     }
-
+            if (guess == guess_number)
+            {
+                System.Console.WriteLine("correct!!");
+                break;
+            }
+            else if(guess_start < guess_end-1 &&  guess != guess_number)
+            {
+                System.Console.WriteLine("wrong, guess again");
+            }
             
-        // }
+            guess_start++;
+        }
+
+        if(guess_start >= guess_end)
+            {
+                System.Console.WriteLine("you lose");
+            }
         
         // do-while
 
@@ -900,6 +897,26 @@ class Program
         // } while (index < 6);
 
     // another guessing game
+    // int guess_number = 10;
+    // int guess_start = 0;
+
+    // while (guess_start >= 0)
+    // {
+    //     System.Console.Write("guess a number: ");
+    //     int guess = Convert.ToInt32(Console.ReadLine());
+
+    //     if (guess == guess_number)
+    //     {
+    //         System.Console.WriteLine("correct!!");
+    //         break;
+    //     }
+    //     else
+    //     {
+    //         System.Console.WriteLine("guess again");
+    //     }
+
+    //     guess_start++;
+    // }
 
 
 
