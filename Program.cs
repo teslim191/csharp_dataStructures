@@ -790,20 +790,169 @@ class Program
     {
         // SayHi("mike", 27);
 
-        System.Console.WriteLine(cube(2,3));
+        // System.Console.WriteLine(cube(2,3));
+        // Console.WriteLine(MaxNumber(7,7));
 
         // Console.WriteLine(Math.Pow(2,3));
 
+        //Console.WriteLine(AddTwoNumbers());
+        // Console.WriteLine(MultiplyTwoNumbers());
+        // Console.Write("enter a number: ");
+        // int e = Convert.ToInt32(Console.ReadLine());
+
+        // Console.Write("enter an operator: ");
+        // string op = Console.ReadLine(); 
+
+        // Console.Write("enter a second number:");
+        // int f = Convert.ToInt32(Console.ReadLine());
+
+        // switch (op)
+        // {
+        //     case "+":
+        //         System.Console.WriteLine(e + f);
+        //         break;
+
+        //     case "-":
+        //         System.Console.WriteLine(e - f);
+        //         break;
+
+        //     case "*":
+        //         System.Console.WriteLine(e * f);
+        //         break;
+
+        //     case "/":
+        //         System.Console.WriteLine(e / f);
+        //         break;
+
+        //     default:
+        //         System.Console.WriteLine("invalid operator");
+        //         break;
+        // }
+
+        // if (op == "+")
+        // {
+        //     Console.WriteLine(e + f);
+        // }
+        // else if (op == "*")
+        // {
+        //     Console.WriteLine(e * f);
+        // }
+        // else if (op == "/")
+        // {
+        //     Console.WriteLine(e / f);
+        // }
+        // else if (op == "-")
+        // {
+        //     Console.WriteLine(e - f);
+        // }
+        // else
+        // {
+        //     Console.WriteLine("enter a valid operator");
+        // }
+
+// while loop
+        // int x = 10;
+        // while (x >= 1)
+        // {
+        //     System.Console.WriteLine(x);
+        //     x--;
+        // }
+
+        // guessing game
+        // int guess_number = 10;
+        // int guess_start = 0;
+        // int guess_end = 3;
+
+        // while (guess_start < guess_end)
+        // {
+        //     System.Console.Write("enter a number: ");
+        //     int guess =(int) Convert.ToInt32(Console.ReadLine());
+            
+        //     if (guess == guess_number)
+        //     {
+        //         System.Console.WriteLine("correct!!");
+        //         break;
+        //     }
+        //     else if(guess != guess_number)
+        //     {
+        //         System.Console.WriteLine("wrong, guess again");
+        //     }
+        //     guess_start++;
+
+        //     if (guess_start >= guess_end)
+        //     {
+                
+        //         System.Console.WriteLine("u lose");
+        //         break;
+        //     }
+
+            
+        // }
+        
+        // do-while
+
+        // int index = 1;
+
+        // do
+        // {
+        //     System.Console.WriteLine(index);
+        //     index++;
+        // } while (index < 6);
+
+    // another guessing game
+
+
+
+
     }
+
+    // static string AddTwoNumbers()
+    // {
+    //     Console.Write("enter a number: ");
+    //     int x = Convert.ToInt32(Console.ReadLine());
+    //     Console.Write("enter a second number:");
+    //     int y = Convert.ToInt32(Console.ReadLine());
+    //     int z = x + y;
+    //     return $"the sum of {x} and {y} is {z}";
+    // }
+
+    // static string MultiplyTwoNumbers()
+    // {
+    //     Console.Write("enter a number: ");
+    //     int a = Convert.ToInt32(Console.ReadLine());
+    //     Console.Write("enter a second number:");
+    //     int b = Convert.ToInt32(Console.ReadLine());
+    //     int c = a * b;
+    //     return $"the product of {a} and {b} is {c}";        
+    // }
 
     // static void SayHi(string name, int age)
     // {
     //     System.Console.WriteLine($"hello {name}, you are {age} years old.");
     // }
 
-    static int cube(int x, int y)
-    {
-       int result = Convert.ToInt32(Math.Pow(x,y));
-       return result;
-    }
+    // static int cube(int x, int y)
+    // {
+    //    int result = Convert.ToInt32(Math.Pow(x,y));
+    //    return result;
+    // }
+
+    // static string MaxNumber(int x, int y)
+    // {
+    //     if (x > y)
+    //     {
+    //         return $"{x} is greater than {y}";
+    //     }
+    //     else if (y > x)
+    //     {
+    //         return $"{y} is greater than {x}";
+    //     }
+    //     else
+    //     {
+    //         return $"{x} and {y} are equal";
+    //     }
+    // }
+
+
+
 }
