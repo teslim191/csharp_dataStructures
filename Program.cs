@@ -859,32 +859,32 @@ class Program
         // }
 
         //guessing game
-        int guess_number = 10;
-        int guess_start = 0;
-        int guess_end = 3;
+        // int guess_number = 10;
+        // int guess_start = 0;
+        // int guess_end = 3;
 
-        while (guess_start < guess_end)
-        {
-            System.Console.Write("enter a number: ");
-             int guess =(int) Convert.ToInt32(Console.ReadLine());
+        // while (guess_start < guess_end)
+        // {
+        //     System.Console.Write("enter a number: ");
+        //      int guess =(int) Convert.ToInt32(Console.ReadLine());
             
-            if (guess == guess_number)
-            {
-                System.Console.WriteLine("correct!!");
-                break;
-            }
-            else if(guess_start < guess_end-1 &&  guess != guess_number)
-            {
-                System.Console.WriteLine("wrong, guess again");
-            }
+        //     if (guess == guess_number)
+        //     {
+        //         System.Console.WriteLine("correct!!");
+        //         break;
+        //     }
+        //     else if(guess_start < guess_end-1 &&  guess != guess_number)
+        //     {
+        //         System.Console.WriteLine("wrong, guess again");
+        //     }
             
-            guess_start++;
-        }
+        //     guess_start++;
+        // }
 
-        if(guess_start >= guess_end)
-            {
-                System.Console.WriteLine("you lose");
-            }
+        // if(guess_start >= guess_end)
+        //     {
+        //         System.Console.WriteLine("you lose");
+        //     }
         
         // do-while
 
@@ -918,7 +918,19 @@ class Program
     //     guess_start++;
     // }
 
+    // string [] names = {"joeffery","cersei","ilyn payne","the hound"};
 
+    // for (int i = 0; i < names.Length; i++)
+    // {   System.Console.WriteLine(names[i]);
+        
+    // }
+
+    // foreach(string j in names)
+    // {
+    //     System.Console.WriteLine(j);
+    // }
+
+    System.Console.WriteLine(GetPow(2,10));
 
 
     }
@@ -969,7 +981,22 @@ class Program
     //         return $"{x} and {y} are equal";
     //     }
     // }
+    // creating an exponent method
+    static int GetPow(int baseNum, int powNum)
+    {
+        int result = 1;
 
+        for (int i = 0; i < powNum; i++)
+        {
+            result *= baseNum;
+        }
+        return result;
+    }
+
+
+
+
+    
 
 
 }
