@@ -18,7 +18,7 @@
 // //     System.Console.WriteLine("the message contains a dog");
 // // }else
 // // {
-    
+
 // // System.Console.WriteLine("it does not");
 // // }
 
@@ -61,7 +61,7 @@
 // // else if (daysUntilExpiration == 1)
 // // {
 // //     System.Console.WriteLine("Your subscription expires within a day!\nRenew now and save 20%!");
-    
+
 // // }
 // // else if (daysUntilExpiration == 0)
 // // {
@@ -216,7 +216,7 @@
 // else{
 //     System.Console.WriteLine("wrong entry");
 // }
-    
+
 // }
 // else if (fullName == "emma")
 // {
@@ -303,7 +303,7 @@
 
 // int eligible = conAmount > cost ? conAmount - 100: conAmount - 50;
 // System.Console.WriteLine(eligible);
-        
+
 // }
 // else
 // {
@@ -325,11 +325,11 @@
 
 // if (permission != null)
 // {
-        
+
 // if (permission.Contains("admin") && ConvertedLevel > 55)
 // {
 //         System.Console.WriteLine("Welcome, Super Admin user.");
-        
+
 // }
 // else if (permission.Contains("admin") && ConvertedLevel <= 55 )
 // {
@@ -473,7 +473,7 @@
 //         default:
 //         type = "others";
 //         break;
-        
+
 // }
 
 // switch (product[1])
@@ -504,7 +504,7 @@
 //         case "L":
 //         size = "large";
 //         break;
-        
+
 //         default:
 //         size = "x-large";
 //         break;
@@ -602,7 +602,7 @@
 // {
 //         System.Console.WriteLine(x);
 //         x = val.Next(1, 11);
-        
+
 // }
 // System.Console.WriteLine(x);
 
@@ -662,7 +662,7 @@
 //     {
 //         System.Console.WriteLine("you've entered a wrong word, try again");
 //     }
-    
+
 // } while (validity == false);
 // System.Console.WriteLine("game over");
 
@@ -684,7 +684,7 @@
 //         System.Console.WriteLine("enter a value between 5-10");
 //         System.Console.WriteLine("try again");
 //     }
-    
+
 // } while (validity == false);
 
 // System.Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
@@ -702,7 +702,7 @@
 //     {
 //         System.Console.WriteLine($"The role name that you entered, \"{role}\" is not valid. Enter your role name (Administrator, Manager, or User)");
 //     }
-    
+
 // } while (validity == false);
 
 
@@ -718,8 +718,8 @@
 //         mySentence.Substring(periodLocation + 1);
 //         System.Console.WriteLine(mySentence);
 //     }
-    
-    
+
+
 // }
 
 // Console.WriteLine("enter your name");
@@ -783,6 +783,8 @@
 // friends[2] = "jane";
 
 // methods
+
+using System.Security.Cryptography;
 
 class Program
 {
@@ -930,10 +932,68 @@ class Program
     //     System.Console.WriteLine(j);
     // }
 
-    System.Console.WriteLine(GetPow(2,10));
+    // System.Console.WriteLine(GetPow(2,10));
 
+    // 2d--array
+    // int [,] numberGrid = {
+    //     {1, 2},
+    //     {3, 4},
+    //     {5, 6}
+    // };
 
+    // System.Console.WriteLine(numberGrid[0,0]);
+
+    // System.Console.WriteLine(numberGrid[1,0]);
+
+    // System.Console.WriteLine(numberGrid[1,0]);
+
+    // System.Console.WriteLine(numberGrid[1,0]);
+
+    //another way
+    // int [,] scores = new int[2,3]; 
+
+// exception handling
+
+// try
+// {
+//         Console.Write("enter x: ");
+//     int x = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("enter y: ");
+//     int y = Convert.ToInt32(Console.ReadLine());
+
+//     System.Console.WriteLine(x / y);
+
+    
+// }
+// catch (System.DivideByZeroException e)
+// {
+    
+// System.Console.WriteLine(e.Message);
+// }
+// catch (System.FormatException e)
+// {
+//     System.Console.WriteLine(e.Message);
+// }
+
+    // classes and methods
+
+    // Book book1 = new Book("lord of the rings", "tolkein", 500);
+    // Book book2 = new Book("Harry Potter", "J.K. Rowling", 700);
+
+    // Book book3 = new Book();
+
+    // book1.title = "The Hobbit";
+
+    // System.Console.WriteLine(book1.title);
+    // System.Console.WriteLine(book2.author);
+    // System.Console.WriteLine(book2.pages);
+
+    Student student1 = new Student("Harry", "CSC", 3.5);
+    Student student2 = new Student("Ginny", "CHM", 2.9);
+
+    System.Console.WriteLine(student2.HasHonours());
     }
+
 
     // static string AddTwoNumbers()
     // {
@@ -982,21 +1042,56 @@ class Program
     //     }
     // }
     // creating an exponent method
-    static int GetPow(int baseNum, int powNum)
-    {
-        int result = 1;
+    // static int GetPow(int baseNum, int powNum)
+    // {
+    //     int result = 1;
 
-        for (int i = 0; i < powNum; i++)
-        {
-            result *= baseNum;
-        }
-        return result;
-    }
-
-
-
-
-    
-
-
+    //     for (int i = 0; i < powNum; i++)
+    //     {
+    //         result *= baseNum;
+    //     }
+    //     return result;
+    // }
 }
+
+class Book
+{
+    public string title;
+    public string author;
+    public int pages;
+
+    public Book()
+    {
+        
+    }
+    public Book(string aTitle, string aAuthor, int aPages)
+    {
+        title = aTitle;
+        author = aAuthor;
+        pages = aPages;
+    }
+}
+
+class Student
+{
+    public string name;
+    public string major;
+    public double gpa;
+
+    public Student(string aName, string aMajor, double aGpa)
+    {
+        name = aName;
+        major = aMajor;
+        gpa = aGpa;
+    }    
+
+    public  string HasHonours()
+    {
+        if (gpa > 3.5)
+        {
+            return $"{name} graduated with honours";
+        }
+        return $"{name} did not graduate with honours";
+    }
+}
+
