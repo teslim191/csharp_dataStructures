@@ -988,10 +988,21 @@ class Program
     // System.Console.WriteLine(book2.author);
     // System.Console.WriteLine(book2.pages);
 
-    Student student1 = new Student("Harry", "CSC", 3.5);
-    Student student2 = new Student("Ginny", "CHM", 2.9);
+    // Student student1 = new Student("Harry", "CSC", 3.5);
+    // Student student2 = new Student("Ginny", "CHM", 2.9);
 
-    System.Console.WriteLine(student2.HasHonours());
+    // System.Console.WriteLine(student2.HasHonours());
+    // Movies movie1 = new Movies("Game of Thrones", "R.R Martin", "PG-13");
+
+    // movie1.Rating = "NNR";
+    // System.Console.WriteLine(movie1.Rating);
+
+    Song song1 = new Song("houdini", "eminem", 300);
+    Console.WriteLine(song1.artiste); 
+    System.Console.WriteLine(Song.songCount);
+    System.Console.WriteLine(song1.GetSongCount());
+
+
     }
 
 
@@ -1092,6 +1103,59 @@ class Student
             return $"{name} graduated with honours";
         }
         return $"{name} did not graduate with honours";
+    }
+}
+
+class Movies
+{
+    public string title;
+    public string director;
+    private string rating;
+
+    public Movies(string aTitle, string aDirector, string aRating)
+    {
+        title = aTitle;
+        director = aDirector;
+        Rating = aRating;
+    }
+
+    public string Rating{
+        get{
+            return rating;
+        }
+        set{
+            if (value == "PG" || value == "NR" || value == "PG-13" || value == "R")
+            {
+                rating = value;
+            }
+            else
+            {
+                rating = "NR";
+            }
+        }
+    }
+}
+
+class Song
+{   
+    public string title;
+    public string artiste;
+    public int duration;
+
+    public static int songCount = 0;
+
+    public Song(string aTitle, string aArtiste, int aDuration)
+    {
+        title = aTitle;
+        artiste = aArtiste;
+        duration = aDuration;
+
+        songCount++;
+    }        
+
+    public int GetSongCount()
+    {
+        return songCount;
     }
 }
 
