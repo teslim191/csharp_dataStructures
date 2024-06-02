@@ -997,11 +997,16 @@ class Program
     // movie1.Rating = "NNR";
     // System.Console.WriteLine(movie1.Rating);
 
-    Song song1 = new Song("houdini", "eminem", 300);
-    Console.WriteLine(song1.artiste); 
-    System.Console.WriteLine(Song.songCount);
-    System.Console.WriteLine(song1.GetSongCount());
+    // Song song1 = new Song("houdini", "eminem", 300);
+    // Console.WriteLine(song1.artiste); 
+    // System.Console.WriteLine(Song.songCount);
+    // System.Console.WriteLine(song1.GetSongCount());
 
+
+    //System.Console.WriteLine(Activities.HasActivity());
+
+    ItalianChef chef1 = new ItalianChef();
+    chef1.Makebbq();
 
     }
 
@@ -1105,7 +1110,7 @@ class Student
         return $"{name} did not graduate with honours";
     }
 }
-
+// getters and setters
 class Movies
 {
     public string title;
@@ -1135,7 +1140,7 @@ class Movies
         }
     }
 }
-
+// static attribute
 class Song
 {   
     public string title;
@@ -1159,3 +1164,41 @@ class Song
     }
 }
 
+// static method
+
+static class Activities
+{
+    public static bool HasActivity()
+    {
+        return true;
+    }
+}
+
+//inheritance
+class Chef
+{
+    public void MakeChicken()
+    {
+        Console.WriteLine("this chef can make chicken");
+    }
+
+    public void MakeSalad()
+    {
+        Console.WriteLine("this chef can make salad");
+    }
+
+    public virtual void Makebbq()
+    {
+        System.Console.WriteLine("this chef can make bbq");
+    }
+}
+
+
+class ItalianChef : Chef
+{
+        public override void Makebbq()
+    {
+        System.Console.WriteLine("this chef can make fish bbq");
+    }
+    
+}
